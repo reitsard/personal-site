@@ -1,11 +1,12 @@
 "use client"
 
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Image from 'next/image'
 
 const HeroSection = () => {
     const [isMouseScroll, setMouseScroll] = useState(false);
-    window.addEventListener('scroll', () => {
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
         let mousePosition = window.scrollY
         if (mousePosition > 0.01) {
             setMouseScroll(true)
@@ -13,6 +14,7 @@ const HeroSection = () => {
         else {
             setMouseScroll(false)
         }
+    })
     })
  
   return (

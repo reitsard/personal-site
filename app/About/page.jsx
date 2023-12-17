@@ -25,7 +25,7 @@ const About = () => {
         <p className="aboutHeading">Background</p>
         <p className="aboutCopy">
           My academic journey began with a sincere aspiration to become a teacher. I was drawn to the idea of shaping young minds and contributing positively to the education sector. I pursued my studies with dedication and enthusiasm, majoring in education and participating in various teaching programs.
-          <br /><br />However, along this journey, I discovered another compelling passion – web development. The vast and dynamic world of coding fascinated me, and I found myself increasingly drawn to the idea of mastering these skills. Recognizing the transformative power of technology and its role in shaping the future, I decided to explore the realm of web development.
+          <br /><br />However, along this journey, I discovered another compelling passion - web development. The vast and dynamic world of coding fascinated me, and I found myself increasingly drawn to the idea of mastering these skills. Recognizing the transformative power of technology and its role in shaping the future, I decided to explore the realm of web development.
         </p>
       </div>
       <div className="aboutSections">
@@ -38,13 +38,13 @@ const About = () => {
       <div className="aboutSections">
         <p className="aboutHeading">Future Aspirations</p>
         <p className="aboutCopy">
-          As I continue freelancing, I am laying the foundation for my ultimate goal – combining my teaching background with web development expertise. I envision a future where I can educate aspiring individuals, not only in conventional subjects but also equip them with the practical skills needed in today's digital landscape.
+          As I continue freelancing, I am laying the foundation for my ultimate goal - combining my teaching background with web development expertise. I envision a future where I can educate aspiring individuals, not only in conventional subjects but also equip them with the practical skills needed in today&#39;s digital landscape.
         </p>
       </div>
       <div className="aboutSections">
         <p className="aboutHeading">Conclusion</p>
         <p className="aboutCopy">
-          My journey from aspiring teacher to a skilled web developer encapsulates a dynamic fusion of passion and adaptability. Through relentless self-learning and hands-on experience, I've embraced the transformative power of technology. My unique trajectory positions me as an individual with the ability to bridge the gap between traditional education and the demands of the modern digital era.
+          My journey from aspiring teacher to a skilled web developer encapsulates a dynamic fusion of passion and adaptability. Through relentless self-learning and hands-on experience, I&#39;ve embraced the transformative power of technology. My unique trajectory positions me as an individual with the ability to bridge the gap between traditional education and the demands of the modern digital era.
         </p>
       </div>
       <div className="aboutSections">
