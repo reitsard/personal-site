@@ -38,7 +38,7 @@ const About = () => {
       <div className="aboutSections">
         <p className="aboutHeading">Future Aspirations</p>
         <p className="aboutCopy">
-          As I continue freelancing, I am laying the foundation for my ultimate goal – combining my teaching background with web development expertise. I envision a future where I can educate aspiring individuals, not only in conventional subjects but also equip them with the practical skills needed in todays digital landscape.
+          As I continue freelancing, I am laying the foundation for my ultimate goal - combining my teaching background with web development expertise. I envision a future where I can educate aspiring individuals, not only in conventional subjects but also equip them with the practical skills needed in todays digital landscape.
         </p>
       </div>
       <div className="aboutSections">
