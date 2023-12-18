@@ -9,11 +9,11 @@ const About = () => {
     <div className="aboutContainer">
       <div className="aboutHeader">
           <div className="gradientGlow"></div>
-      <div>
-          <p className="jobTitle">Frontend Developer</p>
-          <p className="specialization">React JS / Next JS</p>
+          <div>
+              <p className="jobTitle">Frontend Developer</p>
+              <p className="specialization">React JS / Next JS</p>
+          </div>
       </div>
-    </div>
 
       <div className="aboutSections">
         <p className="aboutHeading">Objective</p>
@@ -38,21 +38,13 @@ const About = () => {
       <div className="aboutSections">
         <p className="aboutHeading">Future Aspirations</p>
         <p className="aboutCopy">
-<<<<<<< HEAD
           As I continue freelancing, I am laying the foundation for my ultimate goal - combining my teaching background with web development expertise. I envision a future where I can educate aspiring individuals, not only in conventional subjects but also equip them with the practical skills needed in today&#39;s digital landscape.
-=======
-          As I continue freelancing, I am laying the foundation for my ultimate goal - combining my teaching background with web development expertise. I envision a future where I can educate aspiring individuals, not only in conventional subjects but also equip them with the practical skills needed in todays digital landscape.
->>>>>>> 2c026f3ec5520f8655015cb5fffdfa4e6aab4ff1
         </p>
       </div>
       <div className="aboutSections">
         <p className="aboutHeading">Conclusion</p>
         <p className="aboutCopy">
-<<<<<<< HEAD
           My journey from aspiring teacher to a skilled web developer encapsulates a dynamic fusion of passion and adaptability. Through relentless self-learning and hands-on experience, I&#39;ve embraced the transformative power of technology. My unique trajectory positions me as an individual with the ability to bridge the gap between traditional education and the demands of the modern digital era.
-=======
-          My journey from aspiring teacher to a skilled web developer encapsulates a dynamic fusion of passion and adaptability. Through relentless self-learning and hands-on experience, I have embraced the transformative power of technology. My unique trajectory positions me as an individual with the ability to bridge the gap between traditional education and the demands of the modern digital era.
->>>>>>> 2c026f3ec5520f8655015cb5fffdfa4e6aab4ff1
         </p>
       </div>
       <div className="aboutSections">

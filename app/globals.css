@@ -58,7 +58,7 @@ a {
   justify-content: space-between;
   width: 1366px;
   height: 80px;
-  background: var(--neutrals-tintedWhite);
+  background: rgba(240, 240, 240, 0.3);
   padding: 22px 92px;
   box-sizing: border-box;
 }
@@ -86,7 +86,7 @@ a {
   cursor: pointer;
   overflow: hidden;
   border-radius: 8px;
-  background: var(--green-tint);
+  background: rgba(226, 237, 233, 0.7);
   /*box-shadow: 2px 2px 5px 0px rgba(221, 221, 221, 0.90),
               -2px -2px 4px 0px rgba(255, 255, 255, 0.90),
               2px -2px 4px 0px rgba(221, 221, 221, 0.20),
@@ -142,8 +142,34 @@ a {
 /* Tablet Styles */
 @media (min-width: 768px) and (max-width: 1024px) {
   .navBarContainer {
-    min-width: 768px;
-    max-width: 1024px;
+    width: 1024px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .navBarContainer {
+    width: 768px;
+  }
+  .menuContainer {
+    
+    transform: scale(0.9);
+  }
+  .logo {
+    font-size: 16px;
+  }
+}
+
+
+@media (min-width: 393px) and (max-width: 575px) {
+  .navBarContainer {
+    width: 575px;
+    justify-content: center;
+  }
+  .logo {
+    display: none;
+  }
+  .menuContainer {
+    transform: scale(0.7);
   }
 }
 
@@ -336,88 +362,6 @@ div span {
   100% {left: 120px; visibility: visible;}
 }
 
-/* Tablet Styles */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .heroContainer {
-    transform: scale(0.9);
-  }
-  .macbook {
-    top: -60px;
-    left: 100px;
-  }
-
-  /* figma and nextjs text and icon */
-  .figma,
-  .nextjs {
-    left: 300px;
-  }
-  
-  .heroSlogan {
-    left: 60px;
-    z-index: -1;
-  }
-
-  /* on load animation */
-  @keyframes fadeOnLoad {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-
-  /* laptop image animation right to left */
-  @keyframes macbookRightLeft {
-    0% {left: 100px;}
-    30% {left: 500px;}
-    50% {left: 100px;}
-    70% {left: -60px;}
-    100% {left: 100px;}
-  }
-
-  /* figma display text animation to left */
-  @keyframes figmaAnim {
-    0% {left: 300px; visibility: hidden;}
-    30% {left: 200px; visibility: visible;}
-    50% {left: 300px; visibility: hidden;}
-    70% {left: 120px;}
-    100% {left: 300px;}
-  }
-
-  /* nextjs animation display to right */
-  @keyframes nextAnim {
-    0% {left: 300px;}
-    30% {left: 800px;}
-    50% {left: 300px;}
-    70% {left: 750px;}
-    100% {left: 300px;}
-  }
-
-  /* design image shrink and grow animation */
-  @keyframes design {
-    0% {left: -300px;}
-    30% {left: -200px;}
-    50% {left: -300px}
-    70% {left: -500px;}
-    100% {left: -300px;}
-  }
-
-  /* code image shrink and grow animation */
-  @keyframes code {
-    0% {left: 250px;}
-    30% {left: 400px}
-    50% {left: 250px;}
-    70% {left: 100px;}
-    100% {left: 250px;}
-  }
-
-  /* hero slogan on scroll */
-  @keyframes hideLeft {
-    0% {left: 60px;}
-    30% {left: -500px; visibility: hidden;}
-    50% {left: -500px; visibility: hidden;}
-    70% {left: -500px; visibility: hidden;}
-    100% {left: 60px; visibility: visible;}
-  }
-}
-
 /*----- END OF HERO SECTION ------*/
 
 
@@ -427,12 +371,11 @@ div span {
 .parallaxEffect {
   margin: 0 auto;
   z-index: -1;
-  width: 1366px;
-  height: 768px;
+  width: 100vw;
+  height: 100vh;
   perspective: 10px;
   overflow-y: auto;
   overflow-x: hidden;
-  object-fit: cover;
 }
 
 .webDesignerContainer {
@@ -444,7 +387,6 @@ div span {
   justify-content: center;
   align-items: center;
   transform-style: preserve-3d;
-  object-fit: cover;
 }
 
 #bgBackground {
@@ -452,8 +394,9 @@ div span {
   bottom: 0;
   z-index: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   transform: translateZ(-15px) scale(2.6);
+  object-fit: cover;
 }
 
 .foregroundElements {
@@ -530,7 +473,20 @@ div span {
 /* Tablet Styles */
 @media (min-width: 768px) and (max-width: 1024px) {
   .foregroundElements {
-    right: 300px;
+    
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .foregroundElements {
+    transform: scale(0.8);
+  }
+}
+
+
+@media (min-width: 393px) and (max-width: 575px) {
+  .foregroundElements {
+    transform: scale(0.7);
   }
 }
 /*----- END OF WEB DESIGNER SECTION ------*/
@@ -543,7 +499,7 @@ div span {
 .sectionSeparator {
   display: grid;
   width: 1366px;
-  height: 200px;
+  height: 150px;
   padding: 24px;
   margin-right: 92px;
   background: var(--neutrals-tintedWhite);
@@ -562,6 +518,19 @@ div span {
     height: 100px;
   }
 }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .sectionSeparator {
+    height: 80px;
+  }
+}
+
+
+@media (min-width: 393px) and (max-width: 575px) {
+  .sectionSeparator {
+    height: 40px;
+  }
+}
 /*----- END OF HORIZONTAL BANNER SECTION ------*/
 
 
@@ -577,8 +546,7 @@ div span {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  box-sizing: border-box;
-  width: 100%;
+  width: 100vw;
   height: auto;
   margin-top: 100px;
   animation: fadeOnLoad 0.5s ease-in-out;
@@ -588,10 +556,8 @@ div span {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: space-around;
   padding: 50px;
-  margin: 0 auto;
   box-sizing: border-box;
   width: 1182px;
   height: 254px;
@@ -600,7 +566,7 @@ div span {
 }
 
 .aboutSections {
-  width: 982px;
+  width: 1100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -704,20 +670,53 @@ div span {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .aboutHeader {
-    width: 840px;
+    width: 900px;
   }
-
   .aboutSections {
-    width: 640px;
-  }
-
-  .ssContainer {
-    width: 220px;
+    width: 800px;
   }
 }
 
-/*----- END OF ABOUT SECTION ------*/
-
+@media (min-width: 576px) and (max-width: 767px) {
+  .aboutHeader {
+    height: 150px;
+    width: 700px;
+  }
+  .aboutSections {
+    width: 560px;
+  }
+  .jobTitle {
+    font-size: 32px;
+    letter-spacing: 6px;
+  }
+  .aboutHeading {
+    font-size: 28px;
+  }
+  .aboutCopy {
+    font-size: 20px;
+  }
+}
+  
+  
+@media (min-width: 393px) and (max-width: 575px) {
+  .aboutHeader {
+    height: 150px;
+    width: 500px;
+  }
+  .aboutSections {
+    width: 420px;
+  }
+  .jobTitle {
+    font-size: 32px;
+    letter-spacing: 6px;
+  }
+  .aboutHeading {
+    font-size: 28px;
+  }
+  .aboutCopy {
+    font-size: 20px;
+  }
+}
 
 /*----- SOCIALS SECTION ------*/
 .socialsContainer {
@@ -841,10 +840,130 @@ div span {
   box-shadow: rgba(0, 0, 0, 0.2);
 }
 
+/* Tablet Styles */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .linkTitle {
-    font-size: 24px;
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .socialLinksContainer {
+    height: 100px;
+  }
+
+  .linkedIn,
+  .indeed,
+  .onlinejobsph {
+    transform: scale(0.9);
   }
 }
 
+
+@media (min-width: 393px) and (max-width: 575px) {
+  .socialLinksContainer {
+    height: 70px;
+  }
+
+  .linkedIn,
+  .indeed,
+  .onlinejobsph {
+    transform: scale(0.6);
+  }
+}
 /*----- END OF SOCIAL LINKS SECTION ------*/
+
+
+
+/*----- MAIN HERO SECTION ------*/
+.heroMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.bgMain {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+.fgMain {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.txtMain {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 100px;
+  color: var(--neutrals-gray);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.txtMain span {
+  color: var(--accent-neutral);
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 6px;
+  opacity: 0.7;
+}
+
+.warn {
+  position: absolute;
+  left: 100px;
+  bottom: 50px;
+  opacity: 0.5;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+ .txtMain {
+  transform: scale(0.9);
+ }
+ .fgMain {
+  transform: scale(0.9);
+  bottom: -20px;
+ }
+}
+
+
+@media (min-width: 393px) and (max-width: 575px) {
+  .heroMain {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .txtMain {
+    transform: scale(0.7);
+   }
+   .fgMain {
+    transform: scale(0.8);
+    bottom: -40px;
+    right: -40px;
+   }
+}
+/*----- END OF MAIN HERO SECTION ------*/
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+
+@media (min-width: 393px) and (max-width: 575px) {
+}

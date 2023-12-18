@@ -8,7 +8,7 @@ const HeroSection = () => {
     useEffect(() => {
         window.addEventListener('scroll', () => {
         let mousePosition = window.scrollY
-        if (mousePosition > 0.01) {
+        if (mousePosition > 100) {
             setMouseScroll(true)
         }
         else {
@@ -66,7 +66,6 @@ const HeroSection = () => {
                     alt='nextjs'/>
             <p className="figmaTxt" id='figmaTxt'>We code it using Next JS</p>
         </div>
-        <div className={isMouseScroll ? "heroSlogan heroSloganActive" : "heroSlogan"}>CRAFTING<br />DIGITAL<br />SUCCESS<br /><span>TOGETHER</span></div>
     </div>
     
     </div>

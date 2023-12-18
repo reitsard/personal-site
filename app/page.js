@@ -5,10 +5,13 @@ import ParallaxSection from './webDesignerSection/page'
 import Banner from './horizontalBanner/page'
 import Socials from './Socials/page'
 import SocialLinks from './socialLinks/page'
+import HeroMain from './heroMain/page'
 
 export default function Home() {
   return (
     <main>
+      <HeroMain />
+      <SocialLinks />
       <HeroSection />
       <ParallaxSection
         bgSrc = "/pexels-andrew-neel-8960464.jpg"
@@ -40,7 +43,6 @@ export default function Home() {
         bannerAlt = "banner"
       />
       <Banner />
-      <Socials />
       <SocialLinks />
     </main>
   )
